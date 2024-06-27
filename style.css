@@ -33,7 +33,11 @@
 }
 
 .nav-links {
-    font-family: "Trirong", serif;
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +93,6 @@
 
 /* Body and background stylings */
 
-
 body {
     margin: 0;
     padding: 0;
@@ -128,4 +131,133 @@ footer {
     p {
         color: #ddd;
     }
+}
+
+/* flex boxes */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-size: 100% 100%;
+    border-radius: 20%;
+    object-fit: contain;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-size: 100% 100%;
+    border-radius: 20%;
+    object-fit: contain;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: #353434;
+    /* Light grey background for flex items */
+    border: 1px solid #ddd;
+    /* Light grey border for flex items */
+    padding: 20px;
+    /* Adds some padding inside the flex items */
+    margin: 10px;
+    /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows flex items to grow to fill available space */
+}
+
+.flex-item2 {
+    background-color: #ffffff00;
+    /* Light grey background for flex items */
+    border: 1px solid #ffffff00;
+    /* Light grey border for flex items */
+    padding: 20px;
+    /* Adds some padding inside the flex items */
+    margin: 10px;
+    /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows flex items to grow to fill available space */
+}
+
+/*  Flex box text items */
+
+.text-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.text-card {
+    background: rgb(207, 207, 207);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.text-card:hover {
+    transform: translateY(-10px);
+}
+
+.text-card-content {
+    padding: 20px;
+}
+
+.text-card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.text-card-description {
+    margin: 10px 0 0;
+    color: #000000;
+}
+
+
+
+
+/*tables */ 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(75, 74, 74);
+}
+
+th {
+    background-color: #020069;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*header */ 
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
