@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignemnt 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        header {
+            padding: 1%;
+            color: rgb(0, 0, 0);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        h1 {
+            color: black;
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <nav> <!--Section designed for the navigation bar-->
+        <div class="navbar"> <!--The nav bar class-->
+            <div class="logo">
+                <!--This div's sole purpose is to display the logo I created for the website on the navbar-->
+                <a href="index.html"><img src="Designer - 2024-06-27T041526.269.png" alt="Logo" width="120"></a>
+            </div>
+            <div class="nav-links" id="nav-links"> <!-- Class for the list of items in the navbar-->
+                <a href="music.html">Music</a>
+                <a href="gaming.html">Gaming</a>
+                <a href="vlogs.html">Vlogs</a>
+                <a href="comics.html">Comics</a>
+                <a href="contactform.html">Contact</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+<footer>
+    <p>&copy; 2024 Ben Aharon
+        <br>
+        n01713464@humber.ca
+    </p>
+</footer>
+
+<script>
+    function toggleMenu() { // function create to toggle the menu 
+        const navLinks = document.getElementById('nav-links'); // Assign variable to the navigation links 
+        navLinks.classList.toggle('active');
+    }
+</script>
+</body>
+
+</html>
