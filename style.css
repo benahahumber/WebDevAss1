@@ -1,10 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+/* Nav bar stylings and classes*/ 
 
-.navbar {
+.navbar { /* Flex item box parent for the nav bar*/ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +57,7 @@ body {
     float: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* This is how the content will shift when it enters mobile dimensions*/
     .nav-links {
         display: none;
         flex-direction: column;
@@ -88,5 +84,48 @@ body {
         display: flex;
         float: right;
         justify-content: right;
+    }
+}
+
+/* Body and background stylings */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, blue, rgb(95, 95, 95), blue);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Footer stylings*/ 
+footer {
+    background-color: #333;
+    padding: 10px 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    p {
+        color: #ddd;
     }
 }

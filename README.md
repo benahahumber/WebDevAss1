@@ -1,5 +1,5 @@
 The overall website is going to be a website of several hobbies that I have.
-The idea is to create a website dedicated to multiple hobbies of mine. Each webpage will dedicate one hobby.
+The idea is to create a website dedicated to multiple hobbies of mine. Each webpage will dedicate one hobby. 
 
 The index webpage will be an introduction to the website or the home page. 
 Will include 
