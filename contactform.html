@@ -58,19 +58,52 @@
         </div>
     </nav>
 
-<footer>
-    <p>&copy; 2024 Ben Aharon
+    <main>
         <br>
-        n01713464@humber.ca
-    </p>
-</footer>
+        <div class="flex-container">
+            <div class="text-card">
+                <div class="text-card-content">
+                    <h1>Contact and Feedback Form</h1>
+                    <form action="/submit_feedback" method="post">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
 
-<script>
-    function toggleMenu() { // function create to toggle the menu 
-        const navLinks = document.getElementById('nav-links'); // Assign variable to the navigation links 
-        navLinks.classList.toggle('active');
-    }
-</script>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" id="subject" name="subject" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                        <label for="hobby">Select Hobby:</label><br>
+                        <select id="hobby" name="hobby" required>
+                            <option value="gaming">Gaming</option>
+                            <option value="music">Music</option>
+                            <option value="vlogging_youtube">Vlogging/YouTube</option>
+                            <option value="comic_collecting">Comic Collecting</option>
+                        </select><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ben Aharon
+            <br>
+            n01713464@humber.ca
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() { // function create to toggle the menu 
+            const navLinks = document.getElementById('nav-links'); // Assign variable to the navigation links 
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
