@@ -98,7 +98,7 @@ body {
     padding: 0;
     height: 100vh;
     background: linear-gradient(45deg, blue, rgb(95, 95, 95), blue);
-    background-size: 400% 400%;
+    background-size: 800% 800%;
     animation: gradient 15s ease infinite;
     font-family: Arial, sans-serif;
 }
@@ -122,7 +122,7 @@ footer {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position:relative;
     height: 50px;
     bottom: 0px;
     left: 0px;
@@ -260,4 +260,15 @@ th {
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 786px){
+    main{
+        padding: 135px 50px 50px 50px;
+    }
+
+    .flex{
+        flex-direction: row;
+    }
+
 }
