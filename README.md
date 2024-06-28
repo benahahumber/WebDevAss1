@@ -48,7 +48,7 @@ Footer
 Style 
     - Website background (body)
         - Moving gradient 
-            - Blue and gray 
+            - Blue, White - Dark Gray
 
     Navbar 
         - Dark blue 
